@@ -3,5 +3,15 @@
 <robot name="quadrotor" xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:include filename="$(find hector_quadrotor_description)/urdf/quadrotor_hokuyo_utm30lx.urdf.xacro" />
     <xacro:include filename="$(find hector_quadrotor_gazebo)/urdf/quadrotor_plugins.gazebo.xacro" />
+<!--    <link name = "link"></link>
+    <include>
+        <uri>model://infrared_sensor</uri>
+        <pose>0 0 0.15 -1.57 0 0</pose>
+    </include>
+    <joint name = "infrared_joint" type = "fixed">
+        <child>infrared_sensor::link</child>
+        <parent>quadrotor::link</parent>
+    </joint>
+-->
 </robot>
 
